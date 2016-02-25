@@ -1,0 +1,145 @@
+/*! 
+CELLBOX - SASS GRID SYSTEM by Xavi Ro (xaviro.com)
+*/
+
+// **** Use box > line > cells
+// **** <div class="box"><div class="line"><div class="cell xs-100"></div></div></div>
+// **** xs covers smartphone and above ... sm covers tablet and above ...
+
+/* ----
+** VARIABLES
+---- */
+
+// **** Media queries breakpoints
+// **** smartphone (xs), tablet (sm), desktop (md), wide desktop (lg)
+$xs: 480px;
+$sm: 768px;
+$md: 992px;
+$lg: 1200px;
+// **** Space between cells
+$pad: 30px;
+// **** Box breakpoints
+$box-sm: (720px + $pad);
+$box-md: (940px + $pad);
+$box-lg: (1140px + $pad);
+
+/* ----
+** PLACEHOLDERS
+---- */
+
+// **** Clears floats
+%clearfix {
+    &:before,
+    &:after {
+        content: " "; // for Opera bug
+        display: table; // to use with :before
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// **** Centers block
+%center-block {
+    margin: 0 auto;
+}
+
+/* ----
+** MIXINS
+---- */
+
+// **** Makes box class
+@mixin make-box() {
+    padding-left: floor(($pad / 2));
+    padding-right: ceil(($pad / 2));
+    @extend %center-block;
+    @extend %clearfix;
+}
+
+// **** Makes line class
+@mixin make-line() {
+    margin-left: ceil(($pad / -2));
+    margin-right: floor(($pad / -2));
+    @extend %clearfix;
+}
+
+// **** Makes cell class
+@mixin make-cell {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 1px; // so it doesn't collapse when empty
+    padding-left: ceil(($pad / 2));
+    padding-right: floor(($pad / 2));
+    float: left;
+}
+
+// **** Makes size for cell class
+@mixin cell-size($size) {
+    &.#{$size}-100 {
+        width: 100%;
+    }
+    &.#{$size}-66 {
+        width: 66.66666667%;
+    }
+    &.#{$size}-50 {
+        width: 50%;
+    }
+    &.#{$size}-33 {
+        width: 33.33333333%;
+    }
+    &.#{$size}-25 {
+        width: 25%;
+    }
+}
+
+// ---------
+// CLASSES
+// ---------
+
+// **** Fluid box
+.box-flow {
+    @include make-box;
+}
+
+// **** Box
+.box {
+    @include make-box;
+    @media (min-width: $sm) {
+        width: $box-sm;
+    }
+    @media (min-width: $md) {
+        width: $box-md;
+    }
+    @media (min-width: $lg) {
+        width: $box-lg;
+    }
+}
+
+// **** Line
+.line {
+    @include make-line;
+}
+
+// **** Cells
+.cell {
+    @include make-cell;
+    @include cell-size("xs");
+}
+
+@media (min-width: $sm) {
+    .cell {
+        @include cell-size("sm");
+    }
+}
+
+@media (min-width: $md) {
+    .cell {
+        @include cell-size("md");
+    }
+}
+
+@media (min-width: $lg) {
+    .cell {
+        @include cell-size("lg");
+    }
+}
