@@ -1,9 +1,9 @@
 # CELLTZER 
 ***
 
-1. Use box > line > cells
+## 1. Use box > line > cells
 
-Example 1:
+### Example 1:
 
 ```html
    <div class="box">
@@ -14,14 +14,14 @@ Example 1:
     </div>
 ```
 
-2. Responsive design:
-- xs for smartphone and above
-- sm for ipad and above
-- md for medium desktop
-- sm for large desktop and above
+## 2. Responsive design:
++ xs for smartphone and above
++ sm for ipad and above
++ md for medium desktop
++ sm for large desktop and above
 
 
-Example 2:
+### Example 2:
 
 ```html
    <div class="box">
