@@ -1,7 +1,9 @@
 # CELLTZER 
 ***
 
-## 1. Use box > line > cells
+## 1. Use box/box-flow > line > cells
++ box is static
++ box-flow is fluid
 
 ### Example 1:
 
