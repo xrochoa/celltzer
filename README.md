@@ -5,12 +5,14 @@
 
 Example 1:
 
+<code>
    <div class="box">
       <div class="line">
         <div class="cell xs-50"></div>
         <div class="cell xs-50"></div>
       </div>
     </div>
+</code>
 
 2. Responsive design:
 - xs for smartphone and above
@@ -27,7 +29,7 @@ Example 2:
         <div class="cell xs-100 md-33"></div>
         <div class="cell xs-100 md-33"></div>
       </div>
-   </div>
+    </div>
     
 ***
 #### Sass Grid System
