@@ -36,7 +36,11 @@
 ```
 
 ***
-#### Sass Grid System
+#### Sass Grid System based on Bootstrap but...
++ clean and understandable
++ easy to customize
++ not bloated
++ 
 ###### by Xavi Ro 
 ***
 [xaviro.com](http://www.xaviro.com)
