@@ -40,7 +40,7 @@
 + clean and understandable
 + easy to customize
 + not bloated
-+ 
+
 ###### by Xavi Ro 
 ***
 [xaviro.com](http://www.xaviro.com)
