@@ -27,7 +27,7 @@ Example 2:
         <div class="cell xs-100 md-33"></div>
         <div class="cell xs-100 md-33"></div>
       </div>
-    </div>
+   </div>
     
 ***
 #### Sass Grid System
