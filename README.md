@@ -1,11 +1,14 @@
 # CELLTZER 
-***
+A Sass Grid System based on Bootstrap but...
++ clean and understandable
++ easy to customize
++ not bloated
 
 ## 1. Use box/box-flow > line > cells
 + box is static
 + box-flow is fluid
 
-### Example 1:
+Example 1:
 
 ```html
    <div class="box">
@@ -23,7 +26,7 @@
 + sm for large desktop and above
 
 
-### Example 2:
+Example 2:
 
 ```html
    <div class="box">
@@ -34,13 +37,5 @@
       </div>
     </div>
 ```
-
-***
-#### Sass Grid System based on Bootstrap but...
-+ clean and understandable
-+ easy to customize
-+ not bloated
-
-###### by Xavi Ro 
-***
-[xaviro.com](http://www.xaviro.com)
+## License
+Copyright (c) 2016 by [Xavi Ro](http://www.xaviro.com). MIT License.
