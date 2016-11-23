@@ -1,0 +1,6 @@
+{
+  "name": "Celltzer",
+  "tagline": "Sass Grid System",
+  "body": "# Celltzer\r\nA Sass Grid System based on Bootstrap but...\r\n+ clean and understandable\r\n+ easy to customize\r\n+ not bloated\r\n\r\n## 1. Use box/box-flow > line > cells\r\n+ box is static\r\n+ box-flow is fluid\r\n\r\nExample 1:\r\n\r\n```html\r\n   <div class=\"box\">\r\n      <div class=\"line\">\r\n        <div class=\"cell xs-50\"></div>\r\n        <div class=\"cell xs-50\"></div>\r\n      </div>\r\n    </div>\r\n```\r\n\r\n## 2. Responsive design:\r\n+ xs for smartphone and above\r\n+ sm for ipad and above\r\n+ md for medium desktop\r\n+ sm for large desktop and above\r\n\r\n\r\nExample 2:\r\n\r\n```html\r\n   <div class=\"box\">\r\n      <div class=\"line\">\r\n        <div class=\"cell xs-100 md-33\"></div>\r\n        <div class=\"cell xs-100 md-33\"></div>\r\n        <div class=\"cell xs-100 md-33\"></div>\r\n      </div>\r\n    </div>\r\n```\r\n## License\r\nCopyright (c) 2016. [Xavi Ro](http://www.xaviro.com). MIT License.\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
