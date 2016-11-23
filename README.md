@@ -1,4 +1,4 @@
-# CELLTZER 
+# Celltzer
 A Sass Grid System based on Bootstrap but...
 + clean and understandable
 + easy to customize
