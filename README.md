@@ -38,4 +38,4 @@ Example 2:
     </div>
 ```
 ## License
-Copyright (c) 2016 by [Xavi Ro](http://www.xaviro.com). MIT License.
+Copyright (c) 2016. [Xavi Ro](http://www.xaviro.com). MIT License.
